@@ -248,18 +248,8 @@ addEventListener('keydown', e => {
 });
 addEventListener('click', e => {
   const sl = slides[cur];
-  if (sl.classList.contains('scene')) {
-    // 첫 클릭: 누른 자리에 동그라미, 두 번째 클릭: 바른 행동 장면으로
-    if (step === 0) {
-      const r = sl.getBoundingClientRect();
-      const el = sl.querySelector('.ring ellipse');
-      const x = ((e.clientX - r.left) / r.width * 1920).toFixed(0);
-      const y = ((e.clientY - r.top) / r.height * 1080).toFixed(0);
-      el.setAttribute('cx', x); el.setAttribute('cy', y);
-      el.setAttribute('transform', `rotate(-6 ${x} ${y})`);
-    }
-    next();
-  } else if (e.clientX < innerWidth / 4) prev(); else next();
+  if (sl.classList.contains('scene')) next();  // 첫 클릭은 위험한 곳 동그라미, 두 번째 클릭은 바른 행동 장면
+  else if (e.clientX < innerWidth / 4) prev(); else next();
 });
 addEventListener('resize', fit);
 new ResizeObserver(fit).observe(document.documentElement);
