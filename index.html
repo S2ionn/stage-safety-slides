@@ -112,11 +112,8 @@ h1, h2 { font-weight: normal; }
 .slide.on .card:nth-child(4) { animation-delay: .36s; }
 .slide.on .card:nth-child(5) { animation-delay: .48s; }
 .slide.on .book { animation: fade .6s ease both; }
-.slide.on .rules li { animation: rise .45s ease-out both; }
-.slide.on .rules li:nth-child(2) { animation-delay: .15s; }
-.slide.on .rules li:nth-child(3) { animation-delay: .3s; }
-.slide.on .rules li:nth-child(4) { animation-delay: .45s; }
-.slide.on .rules li:nth-child(5) { animation-delay: .6s; }
+.rules li { opacity: 0; transform: translateY(30px); transition: opacity .4s ease, transform .4s ease; }
+.rules li.in { opacity: 1; transform: none; }
 .slide.still * { animation: none !important; }
 .ring { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 .ring ellipse { fill: none; stroke: #e0302a; stroke-width: 14; stroke-linecap: round;
@@ -155,7 +152,7 @@ h1, h2 { font-weight: normal; }
 <section class="slide still"><h2 class="title">내가 지킬 약속 고르기</h2><div class="cards"><figure class="card"><img class="" data-src="g1" alt=""><figcaption>난간 잡기</figcaption></figure><figure class="card"><img class="" data-src="g2" alt=""><figcaption>천천히 걷기</figcaption></figure><figure class="card"><img class="" data-src="g3" alt=""><figcaption>가장자리에서 멈추기</figcaption></figure><figure class="card"><img class="" data-src="g4" alt=""><figcaption>조명 보지 않기</figcaption></figure><figure class="card"><img class="" data-src="g5" alt=""><figcaption>주위 살피기</figcaption></figure></div></section>
 <section class="slide deco still tm"><h2 class="title">약속 카드 색칠하기</h2><div class="cards"><figure class="card"><img class="" data-src="g1" alt=""><figcaption>난간 잡기</figcaption></figure><figure class="card"><img class="" data-src="g2" alt=""><figcaption>천천히 걷기</figcaption></figure><figure class="card"><img class="" data-src="g3" alt=""><figcaption>가장자리에서 멈추기</figcaption></figure><figure class="card"><img class="" data-src="g4" alt=""><figcaption>조명 보지 않기</figcaption></figure><figure class="card"><img class="" data-src="g5" alt=""><figcaption>주위 살피기</figcaption></figure></div><div class="timer" data-min="8"></div></section>
 <section class="slide band"><div class="center"><h2 class="big">오늘 배운<br>무대 안전 약속에는<br>무엇이 있었나요?</h2></div></section>
-<section class="slide "><h2 class="title">무대 안전 수칙 함께 읽기</h2><ol class="rules"><li><img class="" data-src="g1" alt=""><b>난간 잡기</b>계단을 오르내릴 때 조심해요</li><li><img class="" data-src="g2" alt=""><b>천천히 걷기</b>미끄러지지 않게 조심해요</li><li><img class="" data-src="g3" alt=""><b>가장자리에서 멈추기</b>무대에서 떨어지지 않도록 조심해요</li><li><img class="" data-src="g4" alt=""><b>조명 보지 않기</b>조명을 직접 쳐다보지 않아요</li><li><img class="" data-src="g5" alt=""><b>주위 살피기</b>무대 장치에 부딪치지 않도록 조심해요</li></ol></section>
+<section class="slide " data-steps="5"><h2 class="title">무대 안전 수칙 함께 읽기</h2><ol class="rules"><li data-at="1"><img class="" data-src="g1" alt=""><b>난간 잡기</b>계단을 오르내릴 때 조심해요</li><li data-at="2"><img class="" data-src="g2" alt=""><b>천천히 걷기</b>미끄러지지 않게 조심해요</li><li data-at="3"><img class="" data-src="g3" alt=""><b>가장자리에서 멈추기</b>무대에서 떨어지지 않도록 조심해요</li><li data-at="4"><img class="" data-src="g4" alt=""><b>조명 보지 않기</b>조명을 직접 쳐다보지 않아요</li><li data-at="5"><img class="" data-src="g5" alt=""><b>주위 살피기</b>무대 장치에 부딪치지 않도록 조심해요</li></ol></section>
 <section class="slide band"><div class="center"><h2 class="big">나는 무대에서 꼭<br>“<span class="blank"></span>” 할게요.</h2></div></section>
 <section class="slide band"><div class="center"><div><p class="next">다음 시간에는</p><h2 class="big">영화관에 왔어요</h2><p class="sub">교과서 78~79쪽</p></div></div></section>
 </div>
