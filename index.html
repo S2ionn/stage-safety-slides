@@ -71,9 +71,10 @@ h1, h2 { font-weight: normal; }
 .surprise .qno { display: none; }
 .surprise.running .qno { display: block; }
 .cards { position: absolute; left: 30px; right: 30px; top: 200px; display: flex; gap: 24px; }
-.rules { list-style: none; position: absolute; left: 100px; right: 100px; top: 220px; text-align: left; }
-.rules li { font-size: 58px; line-height: 1.25; padding: 28px 0; border-bottom: 3px solid var(--line); color: var(--ink); white-space: nowrap; }
-.rules b { display: inline-block; width: 620px; color: var(--red); font-weight: normal; }
+.rules { list-style: none; position: absolute; left: 70px; right: 70px; top: 175px; text-align: left; }
+.rules li { display: flex; align-items: center; gap: 36px; font-size: 54px; line-height: 1.2; padding: 12px 0; border-bottom: 3px solid var(--line); color: var(--ink); white-space: nowrap; }
+.rules img { width: 196px; height: 147px; object-fit: cover; border: 4px solid var(--red); flex: none; }
+.rules b { display: inline-block; width: 540px; color: var(--red); font-weight: normal; flex: none; }
 .card { flex: 1; border: 6px solid var(--red); background: #fff; }
 .card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-bottom: 3px solid var(--line); }
 .card figcaption { font-size: 52px; line-height: 1.15; height: 160px; display: flex; align-items: center; justify-content: center; padding: 0 8px; }
@@ -145,7 +146,7 @@ h1, h2 { font-weight: normal; }
 <section class="slide "><h2 class="action">주위 살피기</h2><p class="rule">무대 장치에 부딪치지 않도록 조심해요</p><div class="pair one"><figure class="good"><img class="" data-src="g5" alt=""></figure></div></section>
 <section class="slide still"><h2 class="title">내가 지킬 약속 고르기</h2><div class="cards"><figure class="card"><img class="" data-src="g1" alt=""><figcaption>난간 잡기</figcaption></figure><figure class="card"><img class="" data-src="g2" alt=""><figcaption>천천히 걷기</figcaption></figure><figure class="card"><img class="" data-src="g3" alt=""><figcaption>가장자리에서 멈추기</figcaption></figure><figure class="card"><img class="" data-src="g4" alt=""><figcaption>눈 가리기</figcaption></figure><figure class="card"><img class="" data-src="g5" alt=""><figcaption>주위 살피기</figcaption></figure></div></section>
 <section class="slide deco still"><h2 class="title">약속 카드 색칠하기</h2><div class="cards"><figure class="card"><img class="" data-src="g1" alt=""><figcaption>난간 잡기</figcaption></figure><figure class="card"><img class="" data-src="g2" alt=""><figcaption>천천히 걷기</figcaption></figure><figure class="card"><img class="" data-src="g3" alt=""><figcaption>가장자리에서 멈추기</figcaption></figure><figure class="card"><img class="" data-src="g4" alt=""><figcaption>눈 가리기</figcaption></figure><figure class="card"><img class="" data-src="g5" alt=""><figcaption>주위 살피기</figcaption></figure></div><div class="timer" id="timer"></div></section>
-<section class="slide "><h2 class="title">무대 안전 수칙 함께 읽기</h2><ol class="rules"><li><b>난간 잡기</b>계단을 오르내릴 때 조심해요</li><li><b>천천히 걷기</b>미끄러지지 않게 조심해요</li><li><b>가장자리에서 멈추기</b>무대에서 떨어지지 않도록 조심해요</li><li><b>눈 가리기</b>조명을 직접 쳐다보지 않아요</li><li><b>주위 살피기</b>무대 장치에 부딪치지 않도록 조심해요</li></ol></section>
+<section class="slide "><h2 class="title">무대 안전 수칙 함께 읽기</h2><ol class="rules"><li><img class="" data-src="g1" alt=""><b>난간 잡기</b>계단을 오르내릴 때 조심해요</li><li><img class="" data-src="g2" alt=""><b>천천히 걷기</b>미끄러지지 않게 조심해요</li><li><img class="" data-src="g3" alt=""><b>가장자리에서 멈추기</b>무대에서 떨어지지 않도록 조심해요</li><li><img class="" data-src="g4" alt=""><b>눈 가리기</b>조명을 직접 쳐다보지 않아요</li><li><img class="" data-src="g5" alt=""><b>주위 살피기</b>무대 장치에 부딪치지 않도록 조심해요</li></ol></section>
 <section class="slide band"><div class="center"><h2 class="big">나는 무대에서<br><span class="blank"></span> 할 거예요.</h2></div></section>
 </div>
 <div class="pageno" id="pageno"></div>
