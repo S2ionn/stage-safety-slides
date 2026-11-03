@@ -114,6 +114,10 @@ h1, h2 { font-weight: normal; }
 .slide.on .rules li:nth-child(4) { animation-delay: .45s; }
 .slide.on .rules li:nth-child(5) { animation-delay: .6s; }
 .slide.still * { animation: none !important; }
+.ring { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.ring ellipse { fill: none; stroke: #e0302a; stroke-width: 14; stroke-linecap: round;
+  stroke-dasharray: 1.1; stroke-dashoffset: 1.1; opacity: 0; }
+.scene.shown .ring ellipse { opacity: 1; stroke-dashoffset: 0; transition: stroke-dashoffset .9s ease-out; }
 @media (prefers-reduced-motion: reduce) { .slide.on * { animation: none !important; transition: none !important; } }
 
 .pageno { position: fixed; right: 14px; bottom: 8px; color: rgba(0,0,0,.25); font: 14px Arial, sans-serif; }
@@ -126,15 +130,15 @@ h1, h2 { font-weight: normal; }
 <section class="slide "><img class="fill" data-src="exp" alt=""><h2 class="tag">무대에 올라가 본 적이 있나요?</h2></section>
 <section class="slide band"><div class="center"><h2 class="goal">무대에서 지켜야 할<br>안전 약속을 알고<br>다짐해 봅시다.</h2></div></section>
 <section class="slide band"><div class="center"><h2 class="big">그림 속<br>위험한 곳 찾기</h2></div></section>
-<section class="slide scene"><img class="fill" data-src="s1" alt=""><h2 class="tag">무엇이 위험할까요? 1</h2></section>
+<section class="slide scene" data-steps="1"><img class="fill" data-src="s1" alt=""><svg class="ring" viewBox="0 0 1920 1080"><ellipse cx="960" cy="799" rx="326" ry="238" data-cx="960" data-cy="799" pathLength="1" transform="rotate(-6 960 799)"/></svg><h2 class="tag">무엇이 위험할까요? 1</h2></section>
 <section class="slide "><h2 class="action">난간 잡기</h2><p class="rule">계단을 오르내릴 때 조심해요</p><div class="pair"><figure class="bad"><img class="" data-src="s1" alt=""><span class="mark">X</span></figure><figure class="good"><img class="" data-src="g1" alt=""><span class="mark">O</span></figure></div></section>
-<section class="slide scene"><img class="fill" data-src="s2" alt=""><h2 class="tag">무엇이 위험할까요? 2</h2></section>
+<section class="slide scene" data-steps="1"><img class="fill" data-src="s2" alt=""><svg class="ring" viewBox="0 0 1920 1080"><ellipse cx="1114" cy="886" rx="499" ry="151" data-cx="1114" data-cy="886" pathLength="1" transform="rotate(-6 1114 886)"/></svg><h2 class="tag">무엇이 위험할까요? 2</h2></section>
 <section class="slide "><h2 class="action">천천히 걷기</h2><p class="rule">미끄러지지 않게 조심해요</p><div class="pair"><figure class="bad"><img class="" data-src="s2" alt=""><span class="mark">X</span></figure><figure class="good"><img class="" data-src="g2" alt=""><span class="mark">O</span></figure></div></section>
-<section class="slide scene"><img class="fill" data-src="s3" alt=""><h2 class="tag">무엇이 위험할까요? 3</h2></section>
+<section class="slide scene" data-steps="1"><img class="fill" data-src="s3" alt=""><svg class="ring" viewBox="0 0 1920 1080"><ellipse cx="883" cy="821" rx="250" ry="184" data-cx="883" data-cy="821" pathLength="1" transform="rotate(-6 883 821)"/></svg><h2 class="tag">무엇이 위험할까요? 3</h2></section>
 <section class="slide "><h2 class="action">가장자리에서 멈추기</h2><p class="rule">무대에서 떨어지지 않도록 조심해요</p><div class="pair"><figure class="bad"><img class="" data-src="s3" alt=""><span class="mark">X</span></figure><figure class="good"><img class="" data-src="g3" alt=""><span class="mark">O</span></figure></div></section>
-<section class="slide scene"><img class="fill" data-src="s4" alt=""><h2 class="tag">무엇이 위험할까요? 4</h2></section>
+<section class="slide scene" data-steps="1"><img class="fill" data-src="s4" alt=""><svg class="ring" viewBox="0 0 1920 1080"><ellipse cx="1056" cy="216" rx="250" ry="205" data-cx="1056" data-cy="216" pathLength="1" transform="rotate(-6 1056 216)"/></svg><h2 class="tag">무엇이 위험할까요? 4</h2></section>
 <section class="slide "><h2 class="action">눈 가리기</h2><p class="rule">조명을 직접 쳐다보지 않아요</p><div class="pair"><figure class="bad"><img class="" data-src="s4" alt=""><span class="mark">X</span></figure><figure class="good"><img class="" data-src="g4" alt=""><span class="mark">O</span></figure></div></section>
-<section class="slide scene"><img class="fill" data-src="s5" alt=""><h2 class="tag">무엇이 위험할까요? 5</h2></section>
+<section class="slide scene" data-steps="1"><img class="fill" data-src="s5" alt=""><svg class="ring" viewBox="0 0 1920 1080"><ellipse cx="1402" cy="745" rx="288" ry="324" data-cx="1402" data-cy="745" pathLength="1" transform="rotate(-6 1402 745)"/></svg><h2 class="tag">무엇이 위험할까요? 5</h2></section>
 <section class="slide "><h2 class="action">주위 살피기</h2><p class="rule">무대 장치에 부딪치지 않도록 조심해요</p><div class="pair"><figure class="bad"><img class="" data-src="s5" alt=""><span class="mark">X</span></figure><figure class="good"><img class="" data-src="g5" alt=""><span class="mark">O</span></figure></div></section>
 <section class="slide band"><div class="center"><h2 class="big">교과서 76~77쪽<br>붙임딱지 붙이기</h2></div></section>
 <section class="slide " data-steps="5"><h2 class="tag">붙임딱지 정답</h2><div class="book"><img class="" data-src="book" alt=""><span class="hole" data-at="1" style="left:7.3%;top:83.2%;width:19.4%;height:12.2%"></span><span class="hole" data-at="2" style="left:53.6%;top:35.7%;width:19.0%;height:11.7%"></span><span class="hole" data-at="3" style="left:76.7%;top:39.1%;width:19.5%;height:12.8%"></span><span class="hole" data-at="4" style="left:27.3%;top:24.6%;width:19.4%;height:12.6%"></span><span class="hole" data-at="5" style="left:4.3%;top:30.1%;width:19.2%;height:12.8%"></span></div></section>
@@ -169,6 +173,9 @@ function show(i, st) {
   slides.forEach((el, k) => el.classList.toggle('on', k === cur));
   if (slides[cur].classList.contains('surprise')) spRender(slides[cur], step); else slides[cur].classList.toggle('shown', step > 0);
   slides[cur].querySelectorAll('[data-at]').forEach(el => el.classList.toggle('in', step >= +el.dataset.at));
+  if (step === 0) slides[cur].querySelectorAll('.ring ellipse').forEach(e => {
+    e.setAttribute('cx', e.dataset.cx); e.setAttribute('cy', e.dataset.cy);
+    e.setAttribute('transform', `rotate(-6 ${e.dataset.cx} ${e.dataset.cy})`); });
   pageno.textContent = (cur + 1) + ' / ' + slides.length;
   try { history.replaceState(null, '', '#' + (cur + 1)); } catch (e) {}
 }
@@ -221,7 +228,21 @@ addEventListener('keydown', e => {
   }
   else if (/^[0-9]$/.test(e.key) && slides[cur].classList.contains('deco')) startTimer(+e.key);
 });
-addEventListener('click', e => { if (e.clientX < innerWidth / 4 && !slides[cur].classList.contains('scene')) prev(); else next(); });
+addEventListener('click', e => {
+  const sl = slides[cur];
+  if (sl.classList.contains('scene')) {
+    // 첫 클릭: 누른 자리에 동그라미, 두 번째 클릭: 바른 행동 장면으로
+    if (step === 0) {
+      const r = sl.getBoundingClientRect();
+      const el = sl.querySelector('.ring ellipse');
+      const x = ((e.clientX - r.left) / r.width * 1920).toFixed(0);
+      const y = ((e.clientY - r.top) / r.height * 1080).toFixed(0);
+      el.setAttribute('cx', x); el.setAttribute('cy', y);
+      el.setAttribute('transform', `rotate(-6 ${x} ${y})`);
+    }
+    next();
+  } else if (e.clientX < innerWidth / 4) prev(); else next();
+});
 addEventListener('resize', fit);
 new ResizeObserver(fit).observe(document.documentElement);
 addEventListener('hashchange', () => {
